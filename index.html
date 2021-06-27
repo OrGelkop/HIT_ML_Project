@@ -14274,16 +14274,31 @@ a.anchor-link {
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Background">Background<a class="anchor-link" href="#Background">&#182;</a></h2><p>As our standard of living in growing, people are wasting more money for many reasons (we will see it later on).<br>
-This brings a lot of people to ask for a money loan from various loan companies.<br>
-Every company do not want to lose money and this is the point that we are getting into control.<br></p>
-<p>We are going to "help" those loan companies to have a better risk analytics about each person and to predict if they should approve the loan to a random person or not.<br></p>
+<h2 id="Background">Background<a class="anchor-link" href="#Background">&#182;</a></h2><p>When the company (in our case: LendingClub) receives a loan application, the company has to make a decision for loan approval based on the applicant’s profile. Two types of risks are associated with the bank’s decision:</p>
+<ul>
+<li>If the applicant is likely to repay the loan, then not approving the loan results in a loss of business to the company.</li>
+<li>If the applicant is not likely to repay the loan, i.e. he/she is likely to default, then approving the loan may lead to a financial loss for the company.<br></li>
+</ul>
+<p>The data given contains the information about past loan applicants and whether they 'defaulted' or not.<br>
+The aim is to identify patterns which indicate if a person is likely to default, which may be used for taking actions such as denying the loan, reducing the amount of loan, lending (to risky applicants) at a higher interest rate, etc.</p>
 
 </div>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Data-Description">Data Description<a class="anchor-link" href="#Data-Description">&#182;</a></h2><p>Because of the fact that we are using a financial data that includes private data about people, we used exist dataset that was posted in one of the loan companies at United State.<br>
+<h2 id="Research-Question-+-General-Details">Research Question + General Details<a class="anchor-link" href="#Research-Question-+-General-Details">&#182;</a></h2><p>Like most other lending companies, lending loans to ‘risky’ applicants is the largest source of financial loss (called credit loss).<br>
+The credit loss is the amount of money lost by the lender when the borrower refuses to pay or runs away with the money owed.<br>
+In this case, the customers labelled as 'charged-off' are the 'defaulters'.<br></p>
+<p>In addition, We know that our standard of living in growing, people are wasting more money for many reasons (we will see it later on).<br>
+This brings a lot of people to ask for a money loan from various loan companies.<br>
+Every company (as mentioned earlier) do not want to lose money and this is the point that we are getting into control.<br></p>
+<p><strong>We are going to "help" those loan companies (in our case: LendingClub) to have a better risk analytics about each person, identify these risky loan applicants and to predict if they should approve the loan to a random person or not.<br></strong></p>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="Data-Description">Data Description<a class="anchor-link" href="#Data-Description">&#182;</a></h2><p>Because of the fact that we are using a financial data that includes private data about people, we used exist dataset that was posted in one of the online loan companies at United State.<br>
 The name of the company is: <strong>LendingClub</strong><br>
 We took the dataset and added additional data (scraping) in order to get interesting facts.</p>
 <p>Here is the information on this particular data set:</p>
